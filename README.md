@@ -21,6 +21,34 @@ Welcome to the Backend Developer Hiring Test! This test evaluates your ability t
 - Django admin panel for easy management.
 - Docker support for deployment.
 
+## API Endpoints
+- Fetch All FAQs: GET /api/faqs/
+- Review ALL THE FAQs: GET /admin
+- Fetch FAQs in a Specific Language: GET /api/faqs/?lang={lang}
+
+### response
+``` bash
+[
+    {
+        "id": 1,
+        "question": "What is Django?",
+        "answer": "Django is a Python-based web framework."
+    }
+]
+```
+### Fetch FAQs in a Specific Language
+```bash
+[
+    {
+        "id": 1,
+        "question": "Django क्या है?",
+        "answer": "Django एक पायथन-आधारित वेब फ्रेमवर्क है।"
+    }
+]
+
+```
+
+
 
 ## steps to Install (with python)
 - Clone the Repository
