@@ -23,38 +23,38 @@ Welcome to the Backend Developer Hiring Test! This test evaluates your ability t
 
 
 ## steps to Install (with python)
-- 1. Clone the Repository
+- Clone the Repository
 ```bash
 git clone https://github.com/miharshrajput1/BharatFD
 cd BharatFD
 ```
-- 2. Create and Activate a Virtual Environment
-     ```bash
-      python -m venv venv
-      source venv/bin/activate  # For macOS/Linux
-      venv\Scripts\activate      # For Windows
-      ```
-- 3. Install Dependencies
-     ```bash
-     pip install -r requirements.txt
-      ```
+- Create and Activate a Virtual Environment
+```bash
+ python -m venv venv
+ source venv/bin/activate  # For macOS/Linux
+ venv\Scripts\activate      # For Windows
+ ```
+- Install Dependencies
+```bash
+pip install -r requirements.txt
+ ```
 
-- 4. Apply Migrations
-     ```bash
-     python manage.py migrate
-     python manage.py makemigrations
-     python manage.py migrate
-      ```
+- Apply Migrations
+```bash
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+ ```
 
-- 5. Create a Superuser (for admin panel)
-     ```bash
-     python manage.py createsuperuser
-      ```
+- Create a Superuser (for admin panel)
+```bash
+python manage.py createsuperuser
+ ```
 
-- 6. Start the Development Server
-     ```bash
-     python manage.py runserver 127.0.0.1/8000
-     ```
+- Start the Development Server
+```bash
+python manage.py runserver 127.0.0.1/8000
+```
 
 
 ## Deployment with Docker
@@ -93,8 +93,8 @@ docker-compose restart
 ```
 
 - Docker Container Overview
---web → Django application (Runs on port 8000)
---redis → Redis service (Runs on port 6379)
+-- web → Django application (Runs on port 8000)
+-- redis → Redis service (Runs on port 6379)
 
   
 
