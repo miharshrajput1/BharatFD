@@ -92,9 +92,9 @@ If you need to restart your app:
 docker-compose restart
 ```
 
-- Docker Container Overview
--- web → Django application (Runs on port 8000)
--- redis → Redis service (Runs on port 6379)
+- Docker Container Overview:
+1. web → Django application (Runs on port 8000)
+2. redis → Redis service (Runs on port 6379)
 
   
 
