@@ -59,32 +59,32 @@ python manage.py runserver 127.0.0.1/8000
 
 ## Deployment with Docker
 - Clone the Repository
-  ```bash
-  git clone https://github.com/miharshrajput1/BharatFD
-  cd BharatFD
-  ```
+```bash
+git clone https://github.com/miharshrajput1/BharatFD
+cd BharatFD
+```
 - Build Docker Images
-  ```bash
-  docker-compose build
-  ```
+```bash 
+docker-compose build
+```
 - Run the Containers
-  ```bash
-   docker-compose up -d
-  ```
+```bash
+ docker-compose up -d
+```
 - Apply Migrations
-  ```bash
-  docker-compose exec web python manage.py migrate
-  ```
+ ```bash
+ docker-compose exec web python manage.py migrate
+ ```
 - Create a Superuser (Optional)
-  ```bash
-  docker-compose exec web python manage.py createsuperuser
-  ```
+ ```bash
+ docker-compose exec web python manage.py createsuperuser
+ ```
 
 
 - Stopping the Containers
-  ```bash
-   docker-compose down
-  ```
+```bash
+docker-compose down
+ ```
 
 - Restarting the Containers
 If you need to restart your app:
