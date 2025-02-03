@@ -1,35 +1,100 @@
-# BharatFD - Django Web Application
+# Hiring Test for Backend Developers
 
 ## Overview
-BharatFD is a Django-based web application designed for [brief description of functionality].
 
-## Installation
-### Prerequisites
-Ensure you have the following installed:
-- Python (>=3.8)
-- pip (Python package manager)
-- Virtualenv (optional but recommended)
+Welcome to the Backend Developer Hiring Test! This test evaluates your ability to design, implement, and document a backend system using Django or ExpressJS. Your solution should include a well-structured API, multilingual support, caching, and code best practices.
 
-### Steps to Install
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/bharatFD.git
-   cd bharatFD# BharatFD
+## Technology Stack
+- Backend: Django/Python
+- Database: SQLite (default)
+- Caching: Redis 
+- API: RESTful API with proper authentication
+- Editor Support: WYSIWYG integration using django-ckeditor
+- Translation: Google Translate API / googletrans (for automated multilingual support)
+- Testing: pytest
 
-2. Create and activate a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+## Features
+- Create, read, update, and delete FAQs.
+- Multilingual translation support.
+- REST API for fetching FAQs with language filtering.
+- Caching with Redis for performance optimization.
+- Django admin panel for easy management.
+- Docker support for deployment.
 
-3. Install dependencies:
+
+## steps to Install (with python)
+- 1. Clone the Repository
+```bash
+git clone https://github.com/miharshrajput1/BharatFD
+cd BharatFD
+```
+- 2. Create and Activate a Virtual Environment
+     ```bash
+      python -m venv venv
+      source venv/bin/activate  # For macOS/Linux
+      venv\Scripts\activate      # For Windows
+      ```
+- 3. Install Dependencies
+     ```bash
+     pip install -r requirements.txt
+      ```
+
+- 4. Apply Migrations
+     ```bash
+     python manage.py migrate
+     python manage.py makemigrations
+     python manage.py migrate
+      ```
+
+- 5. Create a Superuser (for admin panel)
+     ```bash
+     python manage.py createsuperuser
+      ```
+
+- 6. Start the Development Server
+     ```bash
+     python manage.py runserver 127.0.0.1/8000
+     ```
+
+
+## Deployment with Docker
+- Clone the Repository
   ```bash
-    pip install -r requirements.txt
+  git clone https://github.com/miharshrajput1/BharatFD
+  cd BharatFD
+  ```
+- Build Docker Images
+  ```bash
+  docker-compose build
+  ```
+- Run the Containers
+  ```bash
+   docker-compose up -d
+  ```
+- Apply Migrations
+  ```bash
+  docker-compose exec web python manage.py migrate
+  ```
+- Create a Superuser (Optional)
+  ```bash
+  docker-compose exec web python manage.py createsuperuser
+  ```
 
-4. Apply migrations and run the server:
-```bash
-python manage.py migrate
-python manage.py runserver
 
-5. Open your browser and visit:
+- Stopping the Containers
+  ```bash
+   docker-compose down
+  ```
+
+- Restarting the Containers
+If you need to restart your app:
 ```bash
-http://127.0.0.1:8000/
+docker-compose restart
+```
+
+- Docker Container Overview
+--web → Django application (Runs on port 8000)
+--redis → Redis service (Runs on port 6379)
+
+  
+
