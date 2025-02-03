@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}FAQ Page{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FAQ API</h1>
+            <a href="{% url 'faq-list' %}" class="btn">Test API</a>
+        </div>
+    </section>
+{% endblock %}

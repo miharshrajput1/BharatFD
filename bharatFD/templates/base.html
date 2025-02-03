@@ -1,0 +1,26 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Landing Page{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BharatFD</div>
+            <ul class="nav-links">
+                <li><a href="{% url 'faq-list' %}">API</a></li>
+                <li><a href="{% url 'admin:index' %}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

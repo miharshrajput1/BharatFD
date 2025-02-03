@@ -1,0 +1,4 @@
+.inline-group .tabular tr {
+    display: flex;
+    flex-direction: column;
+}
