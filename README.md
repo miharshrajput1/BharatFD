@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Backend Developer Hiring Test! This test evaluates your ability to design, implement, and document a backend system using Django or ExpressJS. Your solution should include a well-structured API, multilingual support, caching, and code best practices.
+Welcome to the Backend Developer Hiring Test! This test evaluates your ability to design, implement, and document a backend system using Django. Your solution should include a well-structured API, multilingual support, caching, and code best practices.
 
 ## Technology Stack
 - Backend: Django/Python
